@@ -19,6 +19,36 @@ var num2 = generateRandNum(1,12);
 var num3 = generateRandNum(1,12);
 var num4 = generateRandNum(1,12);
 
+
+//added code by Mahjongg
+/////
+$("#one").attr("data-jewelValue", generateRandNum(1,12));
+
+$("#two").attr("data-jewelValue", generateRandNum(1,12));
+
+$("#three").attr("data-jewelValue", generateRandNum(1,12));
+
+$("#four").attr("data-jewelValue", generateRandNum(1,12));
+
+//$("#three").attr("data-jewelValue"); //this will equal to whatever random number we stored
+
+$('.jewel').on("click", function(){
+    total = total + parseInt($(this).attr("data-jewelValue"));
+    console.log("New total= " + total);
+    $('#total').text(total); 
+          //sets win/lose conditions
+        if (total === numberToMatch){
+          winDeclare();
+        }
+        else if ( total > numberToMatch){
+          loserDeclare();
+        }  
+  })
+
+//start your regular code again
+////
+
+
 // wins and losses tracking
 var total = 0;
 var wins = 0;
@@ -29,13 +59,15 @@ $("#counterLosses").text(losses);
 
 //resets the game
 function reset(){
-	  numberToMatch = generateRandNum(19,120);
-      $("#numberToMatch").text(numberToMatch);
-      console.log(numberToMatch);
-      num1 = generateRandNum(1,12);
-      num2 = generateRandNum(1,12);
-      num3 = generateRandNum(1,12);
-      num4 = generateRandNum(1,12);
+	  	numberToMatch = generateRandNum(19,120);
+	  	$("#numberToMatch").text(numberToMatch);
+		$("#one").attr("data-jewelValue", generateRandNum(1,12));
+
+		$("#two").attr("data-jewelValue", generateRandNum(1,12));
+
+		$("#three").attr("data-jewelValue", generateRandNum(1,12));
+
+		$("#four").attr("data-jewelValue", generateRandNum(1,12));
       total= 0;
       $("#total").text(total);
       }
@@ -56,60 +88,60 @@ alert ("You lose!");
   reset()
 }
 
-//sets up click for jewels
-  $('#one').on("click", function(){
-    total = total + num1;
-    console.log("New total= " + total);
-    $('#total').text(total); 
-          //sets win/lose conditions
-        if (total === numberToMatch){
-          winDeclare();
-        }
-        else if ( total > numberToMatch){
-          loserDeclare();
-        }  
-  })
+// sets up click for jewels
+//   $('#one').on("click", function(){
+//     total = total + num1;
+//     console.log("New total= " + total);
+//     $('#total').text(total); 
+//           //sets win/lose conditions
+//         if (total === numberToMatch){
+//           winDeclare();
+//         }
+//         else if ( total > numberToMatch){
+//           loserDeclare();
+//         }  
+//   })
 
-$('#two').on("click", function(){
-    total = total + num2;
-    console.log("New total= " + total);
-    $('#total').text(total); 
-          //sets win/lose conditions
-        if (total === numberToMatch){
-          winDeclare();
-        }
-        else if ( total > numberToMatch){
-          loserDeclare();
-        }  
-  })
-
-
-$('#three').on("click", function(){
-    total = total + num3;
-    console.log("New total= " + total);
-    $('#total').text(total); 
-          //sets win/lose conditions
-        if (total === numberToMatch){
-          winDeclare();
-        }
-        else if ( total > numberToMatch){
-          loserDeclare();
-        }  
-  })
+// $('#two').on("click", function(){
+//     total = total + num2;
+//     console.log("New total= " + total);
+//     $('#total').text(total); 
+//           //sets win/lose conditions
+//         if (total === numberToMatch){
+//           winDeclare();
+//         }
+//         else if ( total > numberToMatch){
+//           loserDeclare();
+//         }  
+//   })
 
 
-$('#four').on("click", function(){
-    total = total + num4;
-    console.log("New total= " + total);
-    $('#total').text(total); 
-          //sets win/lose conditions
-        if (total === numberToMatch){
-          winDeclare();
-        }
-        else if ( total > numberToMatch){
-          loserDeclare();
-        }  
-  });
+// $('#three').on("click", function(){
+//     total = total + num3;
+//     console.log("New total= " + total);
+//     $('#total').text(total); 
+//           //sets win/lose conditions
+//         if (total === numberToMatch){
+//           winDeclare();
+//         }
+//         else if ( total > numberToMatch){
+//           loserDeclare();
+//         }  
+//   })
+
+
+// $('#four').on("click", function(){
+//     total = total + num4;
+//     console.log("New total= " + total);
+//     $('#total').text(total); 
+//           //sets win/lose conditions
+//         if (total === numberToMatch){
+//           winDeclare();
+//         }
+//         else if ( total > numberToMatch){
+//           loserDeclare();
+//         }  
+//   });
 
 
 
