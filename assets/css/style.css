@@ -1,0 +1,57 @@
+
+html { 
+  background: url("../images/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+h1 {
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	background-color: black;
+	color: teal;
+}
+
+.nav {
+	margin-bottom: 0;
+}
+
+.panel {
+	height:10rem;
+	width: 20rem;
+	position:relative;
+	margin:10px;
+	color: yellow;
+	text-align: center;
+	font-size: 20px;
+	background: teal;
+	m
+}
+
+.btn {
+	padding: 0;
+}
+
+.btn img {
+	position: relative;
+    padding: 0;
+    height: 10rem;
+    width: 10rem;
+    border: solid red 1px;
+	margin:0;
+	padding:0;
+}
+
+#gems{
+	float: right;
+	position: relative;
+}
+
+#counters{
+	float: left;
+	position: relative;
+}
