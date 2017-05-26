@@ -12,47 +12,48 @@
 <body>
 
 <h1 class="navbar-brand text-center">Crystal Collector Game</h1>
- 
 
-<div id="counters">
-<div class="panel panel-default">
-  <div class="panel-heading">Number to Match</div>
-  <div class="panel-body" id="numberToMatch"></div>
+ <div class="container">
+ <div class="row">
+ <div class="col-xs-2">
+      <h3>Number to Match</h3>
+      <h3 id="numberToMatch"></h3> 
 </div>
-
-<div class="panel panel-default">
-  <div class="panel-heading">Wins</div>
-  <div class="panel-body" id="counterWins">
-  </div>
-
-  <div class="panel panel-default">
-  <div class="panel-heading">Losses</div>
-  <div class="panel-body" id="counterLosses">
-  </div>
-
-  <div class="panel panel-default">
-  <div class="panel-heading">Total</div>
-  <div class="panel-body" id="total">
-  </div>
-  </div>
-
-<div id="gems">
-	<button class="btn primary jewel" id="one">
-	     <img src="assets/images/blue.jpg" width="20" />
-	</button>
- 
-	<button class="btn primary jewel" id="two">
-	     <img src="assets/images/green.jpg" width="20" />
-	</button>
-
-	<button class="btn primary jewel" id="three">
-	     <img src="assets/images/red.jpg" width="20" />
-	</button>
-
-	<button class="btn primary jewel" id="four">
-	     <img src="assets/images/yellow.jpg" width="20" />
-	</button>
+<div class="col-xs-2">
+      <h3>Wins</h3>
+    <h2 id="counterWins"></h2>
 </div>
+<div class="col-xs-2">
+    <h3>Losses</h3>
+    <h3 id="counterLosses"></h3>
+    </div>
+<div class="col-xs-2">
+    <h3>Total</h3>
+    <h3 id="total"></h3> 
+    </div>
+    
+
+<div class="column col-xs-4" id="sidebar">
+  	<button class="btn primary jewel" id="one">
+  	     <img src="assets/images/blue.jpg" width="20" />
+  	</button>
+   
+  	<button class="btn primary jewel" id="two">
+  	     <img src="assets/images/green.jpg" width="20" />
+  	</button>
+
+  	<button class="btn primary jewel" id="three">
+  	     <img src="assets/images/red.jpg" width="20" />
+  	</button>
+
+  	<button class="btn primary jewel" id="four">
+  	     <img src="assets/images/yellow.jpg" width="20" />
+  	</button>
+</div>
+<!-- row for the counters end -->
+    </div>
+    </div>
+<!-- container div -->
 
 
 <!-- my scripts -->

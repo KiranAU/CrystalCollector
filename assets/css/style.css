@@ -1,36 +1,30 @@
 
-html { 
+body { 
   background: url("../images/bg.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
-
 h1 {
 	text-align: center;
-	height: 50px;
+	height: 60px;
 	width: 100%;
+	font-size: large;
 	background-color: black;
-	color: teal;
+	color: #229CE4;
+	margin-top: 0;
 }
 
 .nav {
-	margin-bottom: 0;
+	margin-bottom: 50px;
 }
 
-.panel {
-	height:10rem;
-	width: 20rem;
-	position:relative;
-	margin:10px;
-	color: yellow;
+h3{
+	color: blue;
 	text-align: center;
-	font-size: 20px;
-	background: teal;
-	m
+	font-size: medium;
+	color: yellow;
 }
+
 
 .btn {
 	padding: 0;
@@ -38,12 +32,21 @@ h1 {
 
 .btn img {
 	position: relative;
+	float: right;
     padding: 0;
     height: 10rem;
     width: 10rem;
-    border: solid red 1px;
+    border: solid #229CE4 2px;
 	margin:0;
 	padding:0;
+	background: transparent;
+	clear: right;
+}
+
+#sidebar{
+	position: relative;
+	float: right;
+	clear: right;
 }
 
 #gems{
